@@ -40,7 +40,7 @@ def read_data(data_dir, mapping_file):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Read data from excel file')
-    parser.add_argument('data_dir', nargs='?', help='path to the dir containing excel files')
+    parser.add_argument('data_dir', nargs='?', default='data', help='path to the dir containing excel files')
     parser.add_argument('-m', '--mapping_file', default='mapping.csv', help='path to the mapping file')
     parser.add_argument('-l', '--length_out', default='length.csv', help='path to the output length file')
     parser.add_argument('-v', '--volume_out', default='volume.csv', help='path to the output volume file')
